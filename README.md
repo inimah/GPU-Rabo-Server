@@ -1,4 +1,4 @@
-# GPU-Rabo-Server
+# GPU-Server Configuration for KYC/CoCoRn project
 
 Documentation about installation, user manual, and admin manual
 
