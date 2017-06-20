@@ -4,7 +4,7 @@
 ```
 ./configure --prefix=/opt/sw/tools/gnuplot-5.0.6 --disable-shared 2>&1 | tee gnuplot_configure_20170620.log
 make 2>&1 | tee gnuplot_make_20170620.log
-make install 2>&1 | tee gnuplot_make_install_20170620.log
+sudo make install 2>&1 | tee gnuplot_make_install_20170620.log
 ```
 * create modulefile for gnuplot
 ```
