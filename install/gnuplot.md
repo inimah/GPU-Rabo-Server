@@ -10,8 +10,8 @@ sudo make install 2>&1 | tee gnuplot_make_install_20170620.log
 ```
 * create modulefile for gnuplot
 ```
-mkdir -p /opt/sw/modules/modulefiles/gnuplot
-nano /opt/sw/modules/modulefiles/gnuplot/5.0.6
+sudo mkdir -p /opt/sw/modules/modulefiles/gnuplot
+sudo nano /opt/sw/modules/modulefiles/gnuplot/5.0.6
 ```
 * the content of file 5.0.6, as follows:
 ```
@@ -31,7 +31,7 @@ prepend-path	MANPATH		${prefix}/share/man
 ```
 * create .modulerc
 ```
-nano /opt/sw/modules/modulefiles/gnuplot/.modulerc
+sudo nano /opt/sw/modules/modulefiles/gnuplot/.modulerc
 ```
 * with the content as follows:
 ```
