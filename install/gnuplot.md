@@ -11,3 +11,19 @@ sudo make install 2>&1 | tee gnuplot_make_install_20170620.log
 mkdir -p /opt/sw/modules/modulefiles/gnuplot
 nano /opt/sw/modules/modulefiles/gnuplot/5.0.6
 ```
+* the content of file 5.0.6, as follows:
+```
+#%Module
+set version 5.0.6
+
+proc ModuleHelp { } {
+  puts stderr “This module provides the gnuplot library”
+}
+
+module-whatis “gnuplot is a portable command-line driven graphic utility”
+
+set prefix	/opt/sw/tools/gnuplot-${version}
+prepend-path	PATH		${prefix}/bin
+prepend-path	LIBRARY_PATH	${prefix}/libexec
+prepend-path	MANPATH		${prefix}/share/man
+```
