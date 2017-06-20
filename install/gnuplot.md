@@ -1,3 +1,5 @@
+## all installation need to be done with a configuration of environment modules!!! 
+
 * download gnuplot from https://sourceforge.net/projects/gnuplot/files/gnuplot/ 
 * install to /opt/sw/tools/... (all software and libraries should be located in this folder)
 
@@ -26,4 +28,17 @@ set prefix	/opt/sw/tools/gnuplot-${version}
 prepend-path	PATH		${prefix}/bin
 prepend-path	LIBRARY_PATH	${prefix}/libexec
 prepend-path	MANPATH		${prefix}/share/man
+```
+* create .modulerc
+```
+nano /opt/sw/modules/modulefiles/gnuplot/.modulerc
+```
+* with the content as follows:
+```
+#%Module
+# set version aliases and defaults
+if {![info exists gnuplot-done]} {
+  module-version	gnuplot/5.0.6		default
+  set gnuplot-done 1
+}
 ```
