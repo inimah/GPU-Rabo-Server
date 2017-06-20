@@ -4,7 +4,11 @@ The default installation from Ubuntu 16.04 Repo are Python 2.7.12 and Python 3.5
 
 * Download from corresponding website: https://www.python.org/downloads/
 * Untar and configure to /opt/sw/python
-
+```
+./configure --prefix=/opt/sw/tools/python/python-2.7.13 --enable-unicode=ucs4
+sudo make
+sudo make altinstall
+```
 # Python 3.5.3
 
 
