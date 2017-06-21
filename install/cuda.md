@@ -66,14 +66,25 @@ sudo sh *.run
 ```
 sudo dpkg -i cuda-*.deb
 ```
-### In our case, CUDA driver is pre-installed but the path is unconfigured 
+### Apparently, In our case, CUDA driver is pre-installed but the path is unconfigured 
 So, we need to add in global environment
 ```
 export PATH=/usr/local/cuda-8.0/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 ```
+So, alles goed! the rest is verifying the version
+```
+which nvcc
+/usr/local/cuda-8.0/bin/nvcc
 
-* install NVIDIA's CUDA Compiler (NVCC)
+nvcc --version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2016 NVIDIA Corporation
+Built on Tue_Jan_10_13:22:03_CST_2017
+Cuda compilation tools, release 8.0, V8.0.61
+
+```
+
 
 * Download NVIDIA CUDA® Deep Neural Network library (cuDNN) 
 https://developer.nvidia.com/rdp/cudnn-download
