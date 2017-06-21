@@ -49,7 +49,13 @@ sudo apt install nvidia-cuda-toolkit
 
 ```
 * Download kernel headers and development packages from Ubuntu page
+```
+done manually
+```
 * Download cuda-toolkit from [NVIDIA](https://developer.nvidia.com/cuda-downloads)
 ```
 sudo dpkg -i cuda-*.deb
 ```
+* Download NVIDIA CUDA® Deep Neural Network library (cuDNN) 
+https://developer.nvidia.com/rdp/cudnn-download
+
