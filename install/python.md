@@ -125,10 +125,11 @@ setenv  PYTHON_INC      ${prefix}/include
 
 if {![info exists python-done]} {
 
+  module-version        python/3.6.0      3.6
+  module-version        python/3.5.3      3.5
+  module-version        python/2.7.13      2.7
   module-version        python/2.7.12      default
-  module-version        python/2.7.13      2.7.13
-  module-version        python/3.5.3      3.5.3
-  module-version        python/3.6.0      3.6.0
+    
   set python-done 1
 
 }
