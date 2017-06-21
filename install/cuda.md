@@ -40,7 +40,7 @@ NVRM version: NVIDIA UNIX x86_64 Kernel Module  375.51  Wed Mar 22 10:26:12 PDT 
 GCC version:  gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) 
 
 ```
-* check is toolkit is available
+* verify is toolkit is available (installed)
 ```
 nvcc
 
@@ -52,10 +52,22 @@ sudo apt install nvidia-cuda-toolkit
 ```
 done manually
 ```
+* verify whether nouveau display driver is enabled (should be disable first) 
+```
+lsmod | grep nouveau
+```
 * Download cuda-toolkit from [NVIDIA](https://developer.nvidia.com/cuda-downloads)
+* install cuda
+```
+sudo sh *.run
+```
+
+* install cuda-repo package (repository meta data)
 ```
 sudo dpkg -i cuda-*.deb
 ```
+* install NVIDIA's CUDA Compiler (NVCC)
+
 * Download NVIDIA CUDA® Deep Neural Network library (cuDNN) 
 https://developer.nvidia.com/rdp/cudnn-download
 
