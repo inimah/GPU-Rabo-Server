@@ -21,3 +21,7 @@ The program 'nvcc' is currently not installed. You can install it by typing:
 sudo apt install nvidia-cuda-toolkit
 
 ```
+* Download from [NVIDIA](https://developer.nvidia.com/cuda-downloads)
+```
+sudo dpkg -i cuda-*.deb
+```
