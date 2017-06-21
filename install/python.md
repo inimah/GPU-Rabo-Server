@@ -12,8 +12,8 @@ sudo make altinstall
 ```
 * Create module file
 ```
-mkdir -p /opt/sw/modules/modulefiles/python
-nano /opt/sw/modules/modulefiles/python/2.7.13
+sudo mkdir -p /opt/sw/modules/modulefiles/python
+sudo nano /opt/sw/modules/modulefiles/python/2.7.13
 ```
 * with the content as follows:
 ```
@@ -53,7 +53,7 @@ sudo make altinstall
 ```
 * Create module file
 ```
-nano /opt/sw/modules/modulefiles/python/3.5.3
+sudo nano /opt/sw/modules/modulefiles/python/3.5.3
 ```
 with the content as follows:
 ```
@@ -84,6 +84,12 @@ setenv  PYTHON_INC      ${prefix}/include
 
 
 # Python 3.6.0
+
+* Create module file
+```
+sudo nano /opt/sw/modules/modulefiles/python/3.6.0
+```
+with the content as follows:
 
 ```
 #%Module
