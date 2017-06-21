@@ -23,7 +23,7 @@ which python
 ```
 conda create -n tfenv
 source activate tfenv
-conda install 
+conda install tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
 
 ```
 
