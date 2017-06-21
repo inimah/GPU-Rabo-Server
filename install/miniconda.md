@@ -27,3 +27,33 @@ to PATH in your /home/tita/.bashrc ? [yes|no]
 [no] >>> no
 
 ```
+* create module
+```
+sudo mkdir -p /opt/sw/modules/modulefiles/miniconda
+sudo nano /opt/sw/modules/modulefiles/miniconda/2
+```
+* content of module file
+```
+#%Module
+set version 2
+
+proc ModulesHelp { } {
+        puts stderr "This module provides Miniconda with Python version ${version}."
+        puts stderr "This Miniconda is installed specifically for researches that use"
+        puts stderr "Deep Learning packages such as: Theano, TensorFlow, and Keras."
+}
+
+module-whatis "Add Miniconda with Python version ${version} for Deep Learning to the PATH"
+
+set prefix	/opt/sw/packages/miniconda/miniconda-${version}
+prepend-path    PATH            ${prefix}/bin
+prepend-path    LIBRARY_PATH    ${prefix}/lib
+prepend-path    MAN_PATH        ${prefix}/share/man
+prepend-path    PYTHON_PATH     ${prefix}/lib/python2.7
+prepend-path    PACKAGES_PATH   ${prefix}/lib/python2.7/site-packages
+
+setenv  PYTHON_DIR	${prefix}
+setenv  PYTHON_BIN	${prefix}/bin
+setenv  PYTHON_LIB	${prefix}/lib
+setenv  PYTHON_INC	${prefix}/include
+```
