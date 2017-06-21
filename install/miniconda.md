@@ -57,3 +57,16 @@ setenv  PYTHON_BIN	${prefix}/bin
 setenv  PYTHON_LIB	${prefix}/lib
 setenv  PYTHON_INC	${prefix}/include
 ```
+* create .modulerc
+```
+sudo nano /opt/sw/packages/miniconda/.modulerc
+```
+* and the content
+```
+#%Module
+# set version aliases and defaults.
+if {![info exists miniconda-done]} {
+        module-version  miniconda/2                default
+        set miniconda-done 1
+}
+```
