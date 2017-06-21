@@ -89,3 +89,7 @@ Cuda compilation tools, release 8.0, V8.0.61
 * Download NVIDIA CUDA® Deep Neural Network library (cuDNN) 
 https://developer.nvidia.com/rdp/cudnn-download
 
+```
+sudo dpkg -i *.deb
+```
+
