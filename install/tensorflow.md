@@ -19,16 +19,8 @@ Python 2.7.13 :: Continuum Analytics, Inc.
 which python
 /opt/sw/packages/miniconda/miniconda2/bin/python
 ```
-* Install tensorflow under conda environment
+* Install tensorflow after loading miniconda module
 ```
-conda create -n tfenv
-source activate tfenv
-conda install tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
-
+sudo pip install tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
 ```
 
-
-* Deactivate enronment 
-```
-source deactivate tfenv
-```
