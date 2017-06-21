@@ -1,12 +1,15 @@
 * Download the source tensorflow-gpu
 
-* For Python2.7
+https://pypi.python.org/pypi/tensorflow-gpu/1.2.0
+```
+tensorflow_gpu-1.2.0-cp27-cp27mu-manylinux1_x86_64.whl
+```
 
+* The following source is not working in our installation under anaconda module due to some dependencies
+```
 https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
-
-* For Python3
-
 https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp34-cp34m-linux_x86_64.whl
+```
 
 * Install under your choice of python version / packages:
 
@@ -21,6 +24,6 @@ which python
 ```
 * Install tensorflow after loading anaconda module
 ```
-pip install tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
+pip install tensorflow_gpu-1.2.0-cp27-cp27mu-manylinux1_x86_64.whl
 ```
 
