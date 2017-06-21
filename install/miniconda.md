@@ -1,3 +1,4 @@
+*) basic installation of miniconda - without libraries and dependencies
 
 * download and install source miniconda
 ```
