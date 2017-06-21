@@ -11,16 +11,16 @@ https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.0-cp34-cp
 * Install under your choice of python version / packages:
 
 ```
-module load miniconda/2
+module load anaconda/2
 
 python --version
-Python 2.7.13 :: Continuum Analytics, Inc.
+Python 2.7.13 :: Anaconda 4.4.0 (64-bit)
 
 which python
-/opt/sw/packages/miniconda/miniconda2/bin/python
+/opt/sw/packages/anaconda/anaconda2/bin/python
 ```
-* Install tensorflow after loading miniconda module
+* Install tensorflow after loading anaconda module
 ```
-sudo pip install tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
+pip install tensorflow_gpu-1.2.0-cp27-none-linux_x86_64.whl
 ```
 
