@@ -45,7 +45,7 @@ proc ModulesHelp { } {
 
 module-whatis "Add Miniconda with Python version ${version} for Deep Learning to the PATH"
 
-set prefix	/opt/sw/packages/miniconda/miniconda-${version}
+set prefix	/opt/sw/packages/miniconda/miniconda${version}
 prepend-path    PATH            ${prefix}/bin
 prepend-path    LIBRARY_PATH    ${prefix}/lib
 prepend-path    MAN_PATH        ${prefix}/share/man
@@ -59,7 +59,7 @@ setenv  PYTHON_INC	${prefix}/include
 ```
 * create .modulerc
 ```
-sudo nano /opt/sw/packages/miniconda/.modulerc
+sudo nano /opt/sw/modules/modulefiles/miniconda/.modulerc
 ```
 * and the content
 ```
